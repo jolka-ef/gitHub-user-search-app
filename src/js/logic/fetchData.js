@@ -9,15 +9,18 @@ export const useDataAPI = (urlRequest) => {
 
   useEffect(() => {
     if (!url) return;
+    setIsError(false);
     const cachedResponse = localStorage.getItem(url);
     const doFetch = async () => {
       setIsLoading(true);
+
       try {
         const result = await axios(url);
         setData(result.data);
         localStorage.setItem(url, JSON.stringify(result.data));
       } catch (error) {
         setIsError(true);
+        setData(null);
       }
       setIsLoading(false);
     };

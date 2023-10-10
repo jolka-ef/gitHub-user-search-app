@@ -1,0 +1,51 @@
+:root {
+  --accent-color: #3b79fe;
+  --accent-color-faded: #3b79fed1;
+  --accent-text-color: #fff;
+  --bg-color: #fefefe;
+  --bg-color-deep: #eaeaeb96;
+  --button-border-radius: 1em;
+  --text-color: #697c9a;
+  --text-color-deep: #2b3442;
+  --text-color-faded: #4b6a9b73;
+  --content-max-width: 45em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+[data-theme="dark"] {
+  --accent-color: #3b79fe;
+  --bg-color: #1e2a47;
+  --bg-color-deep: #141d2f;
+  --text-color: #fff;
+  --text-color-deep: #fff;
+  --text-color-faded: #ffffffb3;
+}
+
+body {
+  background-color: var(--bg-color-deep);
+  box-sizing: border-box;
+  color: var(--text-color);
+  font: 1em/1.5 system-ui;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 2em 1em;
+}
+main {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+}
+
+.VisuallyHidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}

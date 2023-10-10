@@ -1,0 +1,50 @@
+::placeholder {
+  color: var(--text-color);
+}
+
+.Search {
+  display: flex;
+  align-items: center;
+  background: var(--bg-color);
+  border-radius: 1em;
+  margin: 1.5em 0;
+  padding: 1em;
+}
+
+.Search-button {
+  background-color: var(--accent-color);
+  border: 3px solid var(--accent-color);
+  border-radius: var(--button-border-radius);
+  color: var(--accent-text-color);
+  cursor: pointer;
+  display: block;
+  line-height: 1.8;
+  padding: 0.5em 0.85em;
+}
+
+.Search-button:hover,
+.Search-button:focus {
+  background-color: var(--accent-color-faded);
+  outline: none;
+}
+
+.Search-icon {
+  fill: var(--accent-color);
+  flex: 0 0 auto;
+  margin-right: 0.5em;
+  width: 2em;
+}
+
+.Search-input {
+  color: var(--text-color-deep);
+  flex: 1 1 auto;
+  margin-right: 1em;
+  padding: 0.5em;
+  background-color: var(--bg-color);
+  border: none;
+  width: 100%;
+}
+.Search-input:focus {
+  outline: none;
+  background-color: var(--bg-color);
+}

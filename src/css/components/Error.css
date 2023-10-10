@@ -1,0 +1,17 @@
+.Error {
+  display: flex;
+  align-items: center;
+  color: var(--accent-color);
+  padding: 2em;
+}
+
+.Error-icon {
+  fill: currentColor;
+  height: 2em;
+  width: 2em;
+}
+
+.Error-text {
+  font-weight: bolder;
+  margin-left: 0.5em;
+}

@@ -1,0 +1,15 @@
+.SwitchTheme {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: currentColor;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.SwitchTheme-icon {
+  fill: currentColor;
+  margin-left: 0.5em;
+  width: 1.5em;
+}
